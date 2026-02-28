@@ -20,12 +20,13 @@ for(let student of students){
 
 
 
-// const names = ["mosharof", "rahim", "karim", "sumon"];
+const names = ["mosharof", "rahim", "karim", "sumon"];
 
-// const capitalizedNames = names.map(name => {
-//     const firstLetter = name[0].toUpperCase();
-//     const restOfName = name.slice(1);
-//     return firstLetter + restOfName;
-// });
+for(let i = 0; i < names.length; i++){
+    const firstLetter = names[i][0].toUpperCase();
+    const restofName = names[i].slice(1);
+    console.log(firstLetter + restofName);
+}
 
-// capitalizedNames.forEach(name => console.log(name));
+
+
