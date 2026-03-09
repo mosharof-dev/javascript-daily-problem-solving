@@ -11,8 +11,14 @@ const students = [
 
 
 const passStudent = students.filter(pass => {
-    return pass.marks >= 50;
+    return pass.marks >= 50 ;
 });
 console.log(passStudent);
 
+
+
+//  ================ Problem 2 ========================
 const prices = [100, 200, 300, 400, 500];
+
+const result = prices.map(num => num +100/10)
+console.log(result);
