@@ -20,5 +20,11 @@ console.log(passStudent);
 //  ================ Problem 2 ========================
 const prices = [100, 200, 300, 400, 500];
 
-const result = prices.map(num => num +100/10)
+const result = prices.map(num => num +(num * 10/100))
 console.log(result);
+
+// problem 3 
+
+const num = [ 400, 500, 50, 70];
+const odd = num.map(num => num - (num * 50/100))
+console.log(odd);
