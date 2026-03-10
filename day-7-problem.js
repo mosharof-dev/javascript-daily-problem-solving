@@ -13,3 +13,12 @@ const product = products.filter(item => item.inStock === true)
     price: item.price - (item.price * 10/100)
 }))
 console.log(product);
+
+const users = [
+  { id: 1, name: "Mosharof", role: "admin" },
+  { id: 2, name: "Rahim", role: "user" },
+  { id: 3, name: "Karim", role: "user" },
+  { id: 4, name: "Sumon", role: "moderator" }];
+  
+const user = users.find(item => item.id === 3);
+console.log(user);
