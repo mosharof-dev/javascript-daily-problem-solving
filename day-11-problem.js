@@ -1,4 +1,4 @@
-// ======== Problem 1 ===========
+// ======== Problem 1 — reduce() Practice===========
 
 const students = [
   { name: "Mosharof", marks: 85 },
@@ -15,3 +15,27 @@ const totalMarks = students.reduce((accumulator, current)=>{
    return avg, totalMark;
 }, 0)
 console.log("Total Marks",totalMarks);
+
+//  ===== Problem 2 — Function + filter() + map() =====
+const employees = [
+  { name: "Mosharof", salary: 15000, department: "IT" },
+  { name: "Rahim", salary: 8000, department: "HR" },
+  { name: "Karim", salary: 22000, department: "IT" },
+  { name: "Sumon", salary: 12000, department: "HR" },
+  { name: "Hasan", salary: 18000, department: "IT" }
+];
+
+
+const getITReport = employees.filter(employee =>{
+
+  if(employee.department === "IT" ){
+    return employee;
+  }
+  // employee.map(employee =>{
+
+
+
+  // } )
+
+})
+console.log(getITReport);
