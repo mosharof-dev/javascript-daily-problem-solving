@@ -26,16 +26,16 @@ const employees = [
 ];
 
 
-const getITReport = employees.filter(employee =>{
-
-  if(employee.department === "IT" ){
-    return employee;
+const getITReport = () => {
+ return employees
+ .filter(employee => employee.department === "IT")
+ .map(employee =>{
+  const newSalary = employee.salary + (employee.salary * 10 /100)
+  return{
+    ...employee,
+    salary: newSalary
   }
-  // employee.map(employee =>{
+ })
 
-
-
-  // } )
-
-})
-console.log(getITReport);
+}
+console.log(getITReport());
